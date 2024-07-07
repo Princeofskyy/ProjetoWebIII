@@ -16,7 +16,11 @@ O site vai ser designado inicialmente para completar as tarefas que o professor 
 
 ## Ideia Inicial 
 
-Abaixo criamos um exemplo feito no Canvas e no próprio VSCode de como será as telas de Login e quando o cliente estiver logado para verificar os produtos que temos disponíveis em nosso delivery. 
+Inicialmente o projeto foi pensado para que tenha uma tela de index onde irá mostrar informações da empresa, como localizacão, sobre a empresa, a quanto tempo no mercado e também vai conter um carrosel onde passará as imagens de hamburgueres com algumas decrições.
+
+<img src="./imagens/Index.png" alt="telalogin" width="1000" height="444">
+
+Abaixo também criamos um exemplo feito no Canvas e no próprio VSCode de como será as telas de Login e quando o cliente estiver logado para verificar os produtos que temos disponíveis em nosso delivery. 
 
 <img src="./imagens/TelaLogin.png" alt="telalogin" width="1000" height="444">
 <img src="./imagens/QiDelicia.png" alt="telalogin" width="1000" height="444">
