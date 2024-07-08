@@ -6,6 +6,8 @@ Bem-vindo ao repositório do meu projeto final para a matéria de web III. O pro
 
 - [Visão Geral](#visão-geral)
 - [Ideia Inicial](#ideia-inicial)
+- [Realizadores do Projeto](#realizadores-do-projeto)
+- [Contribuição](#contribuição)
 
 
 ## Visão Geral
@@ -25,6 +27,22 @@ Abaixo também criamos um exemplo feito no Canvas e no próprio VSCode de como s
 <img src="./imagens/TelaLogin.png" alt="telalogin" width="1000" height="444">
 <img src="./imagens/QiDelicia.png" alt="telalogin" width="1000" height="444">
 
+### Realizadores do Projeto.
+
+O projeto foi pensado e elaborado sozinho, conforme as atividades que o professor passou em aula, composto por:
+
+- [**Gabriel Costa**](https://github.com/Princeofskyy)
+- [**Gustavo Brasil**](https://github.com/gustavobrasilm)
+- [**João Mendes**](https://github.com/joaomendesp)
+
+
+### Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para sugerir melhorias em design, funcionalidades e qualquer comentário referente ao site.
+
+---
+
+© 2024 Gabriel. Todos os direitos reservados.
 
 
 
