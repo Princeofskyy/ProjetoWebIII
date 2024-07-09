@@ -29,7 +29,7 @@ Abaixo também criamos um exemplo feito no Canvas e no próprio VSCode de como s
 
 ### Realizadores do Projeto.
 
-O projeto foi pensado e elaborado sozinho, conforme as atividades que o professor passou em aula, composto por:
+O projeto foi pensado e elaborado em grupo, conforme as atividades que o professor passou em aula, composto por:
 
 - [**Gabriel Costa**](https://github.com/Princeofskyy)
 - [**Gustavo Brasil**](https://github.com/gustavobrasilm)
