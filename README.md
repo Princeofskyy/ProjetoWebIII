@@ -6,6 +6,10 @@ Bem-vindo ao repositório do meu projeto final para a matéria de web III. O pro
 
 - [Visão Geral](#visão-geral)
 - [Ideia Inicial](#ideia-inicial)
+- [Funcionalidades](#funcionalidades-principais)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Como Usar](#como-usar)  
 - [Realizadores do Projeto](#realizadores-do-projeto)
 - [Contribuição](#contribuição)
 
@@ -27,6 +31,40 @@ Abaixo também criamos um exemplo feito no Canvas e no próprio VSCode de como s
 <img src="./imagens/TelaLogin.png" alt="telalogin" width="1000" height="444">
 <img src="./imagens/QiDelicia.png" alt="telalogin" width="1000" height="444">
 
+## Funcionalidades:
+
+- **Cadastro e Login de Usuários:** Sistema de autenticação para acesso ao portal para gerenciar clientes e produtos.
+- **Gerenciamento de Produtos:** CRUD para criação, atualização e deleção de produtos.
+- **Gerenciamento de Clientes:** CRUD para criação, atualização e deleção de clientes.
+- **Gerenciamento de Pedidos:** CRUD para clientes fazerem pedidos em nosso sistema.
+- **Conexão com Banco de Dados:** Integração com MySQL para armazenamento e recuperação de dados.
+
+## Estrutura do Projeto
+
+- `index.php`: Página inicial do site.
+- `css/`: Diretório contendo os arquivos CSS.
+- `imagens/`: Diretório para armazenar imagens do site.
+- `classes/`: Diretório contendo as classes de Database, Produtos, Clientes e Usuários.
+- `config/`: Diretório para conexão com o banco de dados.
+- `header&footer/`: Diretório para armazenar as headers e footers do site.
+
+## Como Usar
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/Princeofskyy/ProjetoWebIII.git
+   
+2. Execute o script create_tables.
+
+ ```bash
+  No projeto contém um arquivos chamado "dump.sql" onde você pode copiar o script e colar no seu servidor MySQL.
+```
+
+3. Configure a conexão com o banco de dados:
+```bash
+  Edite o arquivo config/config.php com as credenciais do seu banco de dados.  
+```
 ### Realizadores do Projeto.
 
 O projeto foi pensado e elaborado em grupo, conforme as atividades que o professor passou em aula, composto por:
