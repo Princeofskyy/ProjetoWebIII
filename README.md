@@ -6,7 +6,7 @@ Bem-vindo ao repositório do meu projeto final para a matéria de web III. O pro
 
 - [Visão Geral](#visão-geral)
 - [Ideia Inicial](#ideia-inicial)
-- [Funcionalidades](#funcionalidades-principais)
+- [Funcionalidades](#funcionalidades)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Como Usar](#como-usar)  
@@ -57,12 +57,11 @@ Abaixo também criamos um exemplo feito no Canvas e no próprio VSCode de como s
    
 2. Execute o script create_tables.
 
- ```bash
+ ```
   No projeto contém um arquivos chamado "dump.sql" onde você pode copiar o script e colar no seu servidor MySQL.
 ```
-
 3. Configure a conexão com o banco de dados:
-```bash
+```
   Edite o arquivo config/config.php com as credenciais do seu banco de dados.  
 ```
 ### Realizadores do Projeto.
