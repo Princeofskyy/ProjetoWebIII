@@ -54,16 +54,27 @@ Abaixo também criamos um exemplo feito no Canvas e no próprio VSCode de como s
 
    ```bash
    git clone https://github.com/Princeofskyy/ProjetoWebIII.git
-   
-2. Execute o script create_tables.
 
- ```
-  No projeto contém um arquivos chamado "dump.sql" onde você pode copiar o script e colar no seu servidor MySQL.
-```
-3. Configure a conexão com o banco de dados:
-```
-  Edite o arquivo config/config.php com as credenciais do seu banco de dados.  
-```
+2. Execute o script create_tables
+
+<div style="color: #555;">
+- No projeto contém um arquivos chamado "dump.sql" onde você pode copiar o script e colar no seu servidor MySQL.
+</div>
+
+3. Configure a conexão com o banco de dados
+
+<div style="color: #555;">
+- Edite o arquivo `config/config.php` com as credenciais do seu banco de dados.
+</div>
+
+4. Acesse o localhost
+
+<div style="color: #555;">
+- Entre em seu navegador e digite: `http://localhost/nome-do-projeto`
+- Faça login com as credenciais de usuário (se aplicável).
+- Use as funcionalidades disponíveis.
+</div>
+  
 ### Realizadores do Projeto.
 
 O projeto foi pensado e elaborado em grupo, conforme as atividades que o professor passou em aula, composto por:
