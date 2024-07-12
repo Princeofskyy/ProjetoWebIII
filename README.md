@@ -66,7 +66,7 @@ Abaixo também criamos um exemplo feito no Canvas e no próprio VSCode de como s
 4. Acesse o localhost
 ```
 - Entre em seu navegador e digite: `http://localhost/nome-do-projeto`
-- Faça login com as credenciais de usuário (se aplicável).
+- Cadastre-se e faça login com as credenciais de usuário.
 - Use as funcionalidades disponíveis.
 ```
   
