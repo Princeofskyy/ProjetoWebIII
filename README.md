@@ -58,7 +58,6 @@ Abaixo também criamos um exemplo feito no Canvas e no próprio VSCode de como s
 2. Execute o script create_tables
 ```
 - No projeto contém um arquivos chamado "dump.sql" onde você pode copiar o script e colar no seu servidor MySQL.
-</div>
 ```
 3. Configure a conexão com o banco de dados
 ```
