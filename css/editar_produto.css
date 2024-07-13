@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;700&display=swap');
+
+/* Estilização geral */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #2c2c2c, #3b3b3b);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px; /* Ajuste do tamanho do texto padrão */
+}
+
+/* Estilizando o container */
+.container {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px; 
+    margin: 20px auto; /* Centraliza na tela */
+}
+
+/* Ajustando os h1 */
+.container h2 {
+    font-family: 'Lobster', cursive;
+    color: rgb(155, 43, 43);
+    margin-bottom: 20px;
+}
+
+/* Ajustando as labels */
+.container label {
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+/* Ajustando os inputs */
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"],
+.container input[type="number"],
+.container textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #939393; /* Cor do input */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff; 
+    color: #333; 
+}
+
+.container input[type="file"] {
+    margin-bottom: 20px;
+    color: #ffffff; 
+}
+
+/* Ajustando os botões */
+.container input[type="submit"],
+.container input[type="button"] {
+    background-color: rgb(155, 43, 43);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container input[type="submit"]:hover,
+.container input[type="button"]:hover {
+    background-color: #d9534f;
+}
+
+/* Ajustando a imagem */
+.container img {
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100px;
+}

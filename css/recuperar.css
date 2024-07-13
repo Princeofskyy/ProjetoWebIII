@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    background: linear-gradient(45deg, #2c2c2c, #3b3b3b);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.recuperar-container {
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.recuperar-container h1 {
+    font-family: 'Lobster', cursive;
+    color: rgb(155, 43, 43); 
+    margin-bottom: 20px;
+}
+
+.recuperar-container label {
+    font-weight: bold;
+    color: #fff; 
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+.recuperar-container input[type="email"] {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; 
+    background-color: #fff; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container input[type="submit"],
+.button-container input[type="button"] {
+    margin-right: 10px; 
+}
+
+.button-container input[type="button"]:last-child {
+    margin-right: 0;
+}
+
+.recuperar-container input[type="submit"],
+.recuperar-container input[type="button"] {
+    background-color: rgb(155, 43, 43); 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.recuperar-container input[type="submit"]:hover,
+.recuperar-container input[type="button"]:hover {
+    background-color: rgb(209, 68, 68); 
+}
+
+.recuperar-container p {
+    margin-top: 20px;
+}
+
+.recuperar-container p a {
+    color: rgb(155, 43, 43); 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recuperar-container p a:hover {
+    text-decoration: underline;
+}
+
+.msg {
+    color: #ffffff;
+}

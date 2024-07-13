@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;700&display=swap');
+
+/* Estilo para o corpo da página */
+body {
+    background: black;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo para o container principal */
+.container {
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: rgb(131, 121, 121);
+    flex: 1; 
+}
+
+/* Estilo para a navbar */
+.navbar {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo para as cards */
+.card {
+    background: black;
+    border: 1px solid rgb(155, 43, 43);
+    color: rgb(131, 121, 121);
+}
+
+.card-title {
+    font-family: 'Lobster', cursive;
+    color: rgb(155, 43, 43);
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-weight: bold;
+    color: rgb(131, 121, 121);
+}
+
+/* Estilo para os botões */
+.select-button {
+    background-color: rgb(155, 43, 43);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.select-button:hover {
+    background-color: rgb(209, 68, 68);
+}
+
+/* Estilo para o footer */
+footer {
+    color: rgb(131, 121, 121);
+    padding: 20px 0;
+    background: black;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Estilo para os links da navbar */
+.nav-link {
+    color: rgb(155, 43, 43) !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: rgb(209, 68, 68) !important;
+}
+
+/* Estilo para o título da navbar */
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    color: rgb(155, 43, 43);
+}

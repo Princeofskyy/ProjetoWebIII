@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;700&display=swap');
+
+/* Estilo para o corpo da página */
+body {
+    background: #3b3b3b;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo para o container */
+.row {
+    margin: 0;
+}
+
+.col-md-12 {
+    padding: 0;
+}
+
+/* Estilo para a navbar */
+.navbar {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo para os links da navbar */
+.nav-link {
+    color: rgb(155, 43, 43) !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: rgb(209, 68, 68) !important;
+}
+
+/* Estilo para o título da navbar */
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    color: rgb(155, 43, 43);
+}
+
+/* Estilo para as cards */
+.card {
+    background: black;
+    border: 1px solid rgb(155, 43, 43);
+    color: rgb(131, 121, 121);
+    margin-bottom: 20px; 
+}
+
+.card-title {
+    font-family: 'Lobster', cursive;
+    color: rgb(155, 43, 43);
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-weight: bold;
+    color: rgb(131, 121, 121);
+}
+
+/* Estilo para o footer */
+footer {
+    color: rgb(131, 121, 121);
+    padding: 20px 0;
+    background: black;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Ajuste para o título principal */
+h2 {
+    font-family: 'Lobster', cursive;
+    color: rgb(155, 43, 43);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para o contêiner de dados do cliente */
+.card-body {
+    padding: 20px;
+}
+
+.card p {
+    margin: 10px 0;
+}

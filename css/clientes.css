@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;700&display=swap');
+
+/* Estilização geral da página */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #2c2c2c, #3b3b3b);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px; 
+}
+
+/* Estilizando a header */
+header {
+    background-color: #000000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    color: rgb(155, 43, 43); 
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    color: rgb(155, 43, 43); 
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Estilizando o conteúdo principal */
+.container {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    word-wrap: break-word; 
+}
+
+.container h1 {
+    font-family: 'Lobster', cursive;
+    color: rgb(155, 43, 43); 
+    margin-bottom: 20px;
+}
+
+.container form {
+    margin-bottom: 20px;
+}
+
+.container input[type="text"],
+.container input[type="radio"],
+.container button[type="submit"] {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #939393;
+}
+
+/* Adicionando rolagem horizontal para tabelas grandes */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; 
+}
+
+.container th, .container td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #9c9c9c;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+
+.container th {
+    background-color: rgb(107, 107, 107); 
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.container td {
+    vertical-align: middle;
+    white-space: normal; 
+}
+
+.container a {
+    text-decoration: none;
+    color: rgb(155, 43, 43); 
+    margin-right: 10px;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+/* Estilizando o footer */
+footer {
+    background-color: #000000;
+    color: #837979; 
+    text-align: center;
+    padding: 0.5em 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+}
+
+
