@@ -9,7 +9,6 @@ $usuario = new Usuario($db);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['login'])) {
-        // Processar login
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 

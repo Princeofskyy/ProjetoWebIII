@@ -15,7 +15,7 @@ $usuario = new Usuario($db);
 if (isset($_GET['deletar'])) {
     $id = $_GET['deletar'];
     $usuario->deletar($id);
-    header('Location: portal.php');
+    header('Location: crudusuario.php');
     exit();
 }
 // Obter parâmetros de pesquisa e filtros
@@ -94,15 +94,15 @@ function saudacao()
             </tr>
             <?php while ($row = $dados->fetch(PDO::FETCH_ASSOC)): ?>
                 <tr>
-                    <td><?php echo $row['id']; ?></td>
+                    <td><?php echo $row['id_usuario']; ?></td>
                     <td><?php echo $row['nome']; ?></td>
                     <td><?php echo ($row['sexo'] === 'M') ? 'Masculino' : 'Feminino'; ?></td>
                     <td><?php echo $row['fone']; ?></td>
                     <td><?php echo $row['email']; ?></td>
                     <td>
-                        <a href="editar.php?id=<?php echo $row['id']; ?>">Editar</a>
-                        <a href="crudusuario.php?deletar=<?php echo $row['id']; ?>">Deletar</a>
-                    </td>
+                        <a href="editar.php?id=<?php echo $row['id_usuario']; ?>">Editar</a>
+                        <a href="crudusuario.php?deletar=<?php echo $row['id_usuario']; ?>">Deletar</a>
+                    </td> 
                 </tr>
             <?php endwhile; ?>
         </table>

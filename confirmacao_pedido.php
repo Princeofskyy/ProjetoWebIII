@@ -1,8 +1,6 @@
 <?php
-// Verificar se a sessão está iniciada
 session_start();
 
-// Redirecionar se não houver uma sessão de cliente ativa
 if (!isset($_SESSION['cliente_id'])) {
     header('Location: login.php');
     exit();

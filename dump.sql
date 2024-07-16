@@ -35,7 +35,8 @@ CREATE TABLE produtos (
     nome VARCHAR(255) NOT NULL,
     preco DECIMAL(10, 2) NOT NULL,
     descricao TEXT,
-    imagem VARCHAR(255)
+    imagem VARCHAR(255),
+    CONSTRAINT produtos_pk PRIMARY KEY (id_produto)
 );
 
 CREATE TABLE pedidos (

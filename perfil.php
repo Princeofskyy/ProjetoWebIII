@@ -39,7 +39,7 @@ $complemento_cliente = $dados_cliente['complemento'];
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
     <div class="container-fluid">
-            <a class="navbar-brand" href="portalcliente.php">Portal Cliente</a>
+            <a class="navbar-brand" href="portalcliente.php">Voltar ao Portal</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -49,9 +49,7 @@ $complemento_cliente = $dados_cliente['complemento'];
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="perfil.php">
-                            <i class="bi bi-person-circle"></i> Perfil
-                        </a>
+                        <a class="nav-link" href="meuspedidos.php"><i class="bi bi-bag"></i> Meus pedidos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="carrinho.php">

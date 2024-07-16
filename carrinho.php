@@ -46,9 +46,7 @@ function getProdutoDetails($id, $produto) {
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="carrinho.php">
-                            <i class="bi bi-cart"></i> Carrinho
-                        </a>
+                        <a class="nav-link" href="meuspedidos.php"><i class="bi bi-bag"></i> Meus pedidos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout_cliente.php">

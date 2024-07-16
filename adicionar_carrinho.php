@@ -7,7 +7,7 @@ if (!isset($_SESSION['cliente_id'])) {
 }
 
 include_once './config/config.php';
-include_once './classes/Produtos.php'; // Certifique-se de que o arquivo está incluído e o nome da classe é Produto
+include_once './classes/Produtos.php';
 
 $produto = new Produto($db);
 
@@ -16,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id_produto = $data['id'];
     $quantidade = isset($data['quantidade']) ? intval($data['quantidade']) : 1;
 
-    // Verificar se o produto existe
     $produtoInfo = $produto->lerPorId($id_produto);
 
     if ($produtoInfo) {

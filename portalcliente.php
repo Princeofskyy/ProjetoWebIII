@@ -49,6 +49,9 @@ $produtos = $produto->ler();
                         <a class="nav-link" href="perfil.php"><i class="bi bi-person-circle"></i> Perfil</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="meuspedidos.php"><i class="bi bi-bag"></i> Meus pedidos</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="carrinho.php"><i class="bi bi-cart"></i> Carrinho</a>
                     </li>
                     <li class="nav-item">
@@ -87,7 +90,6 @@ $produtos = $produto->ler();
                     const quantidadeInput = document.querySelector('.quantidade-input[data-option-id="' + optionId + '"]');
                     const quantidade = quantidadeInput ? quantidadeInput.value : 1;
                     
-                    // Verifica se o botão mostra "Adicionar ao Carrinho"
                     if (this.textContent.trim() === 'Adicionar ao Carrinho') {
                         fetch('adicionar_carrinho.php', {
                             method: 'POST',
@@ -110,7 +112,7 @@ $produtos = $produto->ler();
                             console.error('Erro:', error);
                             alert('Erro ao processar a solicitação.');
                         });
-                    } else { // Se o botão mostra "Ir ao Carrinho"
+                    } else { 
                         window.location.href = 'carrinho.php';
                     }
                 });

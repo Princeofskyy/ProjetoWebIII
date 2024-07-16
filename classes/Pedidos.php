@@ -1,5 +1,4 @@
 <?php
-// classes/Pedidos.php
 
 class Pedido {
     private $id_pedido;
@@ -8,25 +7,24 @@ class Pedido {
     private $quantidade;
     private $preco_final;
     private $observacao_pedido;
-    private $endereco_entrega; // Novo campo adicionado
+    private $endereco_entrega; 
     private $data_pedido;
     private $status_pedido;
     private $pagamento_pedido;
 
-    // Construtor
+  
     public function __construct($id_cliente, $id_produto, $quantidade, $preco_final, $observacao_pedido, $endereco_entrega, $data_pedido, $status_pedido, $pagamento_pedido) {
         $this->id_cliente = $id_cliente;
         $this->id_produto = $id_produto;
         $this->quantidade = $quantidade;
         $this->preco_final = $preco_final;
         $this->observacao_pedido = $observacao_pedido;
-        $this->endereco_entrega = $endereco_entrega; // Incluído o campo endereco_entrega
+        $this->endereco_entrega = $endereco_entrega; 
         $this->data_pedido = $data_pedido;
         $this->status_pedido = $status_pedido;
         $this->pagamento_pedido = $pagamento_pedido;
     }
 
-    // Métodos getters
     public function getIdCliente() {
         return $this->id_cliente;
     }
@@ -63,9 +61,7 @@ class Pedido {
         return $this->pagamento_pedido;
     }
 
-    // Método estático para criar um pedido
     public static function criarPedido($conn, $pedido) {
-        // Preparar e executar a query SQL para inserir o pedido
         $sql = "INSERT INTO pedidos (id_cliente, id_produto, quantidade, preco_final, observacao_pedido, endereco_entrega, data_pedido, status_pedido, pagamento_pedido) 
                 VALUES (:id_cliente, :id_produto, :quantidade, :preco_final, :observacao_pedido, :endereco_entrega, :data_pedido, :status_pedido, :pagamento_pedido)";
         $stmt = $conn->prepare($sql);

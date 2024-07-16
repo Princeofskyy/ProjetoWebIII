@@ -13,7 +13,7 @@ $produto = new Produto($db);
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     $produto->deletar($id);
-    header('Location: crudprodutos.php'); // Redireciona após deletar o produto
+    header('Location: crudprodutos.php'); 
     exit();
 }
 ?>

@@ -2,27 +2,23 @@
 session_start();
 include_once './config/config.php';
 include_once './classes/Cliente.php';
-include_once './classes/Pedidos.php'; // Renomeei o arquivo para Pedido.php
-include_once './classes/Produtos.php'; // Renomeei o arquivo para Produto.php
+include_once './classes/Pedidos.php'; 
+include_once './classes/Produtos.php'; 
 
 $cliente = new Cliente($db);
 
-// Verificar se o cliente está logado
 if (!isset($_SESSION['cliente_id'])) {
     header('Location: login.php');
     exit();
 }
 
-// Obter dados do cliente logado
 $dados_cliente = $cliente->lerPorId($_SESSION['cliente_id']);
 $nome_cliente = $dados_cliente['nome'];
 $email_cliente = $dados_cliente['email'];
 $telefone_cliente = $dados_cliente['fone'];
 
-// Carregar itens do carrinho
 $carrinho = isset($_SESSION['carrinho']) ? $_SESSION['carrinho'] : [];
 
-// Função para obter os detalhes das opções do banco de dados
 function getOptionDetails($conn, $id) {
     $sql = "SELECT * FROM produtos WHERE id_produto = :id";
     $stmt = $conn->prepare($sql);
@@ -31,14 +27,12 @@ function getOptionDetails($conn, $id) {
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-// Inicializar variáveis de detalhes do pedido
 $detalhes_pedido = array();
 $total_itens = 0;
 
 foreach ($carrinho as $id => $quantidade) {
     $details = getOptionDetails($db, $id);
 
-    // Verificar se há detalhes válidos antes de acessar os índices
     if ($details && is_array($details)) {
         $total_itens += $details['preco'] * $quantidade;
         $detalhes_pedido[] = array(
@@ -50,66 +44,55 @@ foreach ($carrinho as $id => $quantidade) {
     }
 }
 
-// Calcular o total do pedido (itens + taxa de entrega)
 $taxa_entrega = 7.00;
 $total_pedido = $total_itens + $taxa_entrega;
 
-// Mensagem de confirmação
 $confirmacao_pedido = '';
 
-// Processar o pedido se o formulário for submetido
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['endereco_entrega'])) {
     $_SESSION['endereco_entrega'] = $_POST['endereco_entrega'];
 
-    // Verificar se foi selecionado um método de pagamento
     if (isset($_POST['forma_pagamento'])) {
         $forma_pagamento = $_POST['forma_pagamento'];
 
-        // Definir estado de pagamento com base na forma escolhida
         $pagamento_pedido = false;
         if ($forma_pagamento === 'cartao') {
-            $pagamento_pedido = true; // Pagamento com cartão
+            $pagamento_pedido = true; 
         }
 
-        // Inicializar variável para guardar o sucesso da criação do pedido
         $pedidoCriadoComSucesso = false;
 
-        // Processar cada item do carrinho
         foreach ($carrinho as $id => $quantidade) {
-            $produto = new Produto($db); // Instanciar a classe Produto se necessário
+            $produto = new Produto($db); 
             $detalhes_produto = $produto->lerPorId($id);
 
-            // Verificar se o produto foi encontrado
             if ($detalhes_produto) {
                 $pedido = new Pedido(
                     $_SESSION['cliente_id'],
                     $id,
-                    $quantidade, // Quantidade do produto
+                    $quantidade, 
                     $total_pedido,
-                    '', // Observação do pedido (ajuste conforme necessário)
+                    '', 
                     $_SESSION['endereco_entrega'],
-                    date('Y-m-d'), // Data do pedido
-                    'Pendente', // Status do pedido inicial
+                    date('Y-m-d'), 
+                    'Pendente', 
                     $pagamento_pedido
                 );
 
-                // Chame o método estático para criar o pedido
                 if (Pedido::criarPedido($db, $pedido)) {
                     $pedidoCriadoComSucesso = true;
                 } else {
                     $confirmacao_pedido = 'Erro ao criar pedido.';
-                    break; // Parar o loop em caso de erro
+                    break; 
                 }
             } else {
                 $confirmacao_pedido = 'Produto não encontrado no banco de dados.';
-                break; // Parar o loop em caso de produto não encontrado
+                break; 
             }
         }
 
-        // Verificar se todos os pedidos foram criados com sucesso
         if ($pedidoCriadoComSucesso) {
             unset($_SESSION['carrinho']);
-            // Redirecionar para a página de confirmação
             header('Location: confirmacao_pedido.php');
             exit();
         }

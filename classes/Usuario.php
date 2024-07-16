@@ -77,11 +77,11 @@ class Usuario
         return $stmt;
     }
 
-    public function deletar($id)
+    public function deletar($id_usuario)
     {
-        $query = "DELETE FROM " . $this->table_name . " WHERE id = ?";
+        $query = "DELETE FROM " . $this->table_name . " WHERE id_usuario = ?";
         $stmt = $this->db->prepare($query);
-        $stmt->execute([$id]);
+        $stmt->execute([$id_usuario]);
         return $stmt;
     }
 

@@ -86,7 +86,7 @@
             <!-- Links para Instagram e WhatsApp -->
             <p>
                 Siga-nos:
-                <a href="https://www.instagram.com/sensibily" target="_blank">Instagram</a> |
+                <a href="https://www.instagram.com/HamburgueriaQiDelicia" target="_blank">Instagram</a> |
                 <a href="https://wa.me/551112345678" target="_blank">WhatsApp</a>
             </p>
 

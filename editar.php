@@ -39,7 +39,7 @@ if (isset($_GET['id'])){
     <div class="editar-container">
         <h1>Editar Usuário</h1>
         <form method="POST">
-            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+            <input type="hidden" name="id" value="<?php echo $row['id_usuario']; ?>">
             <label for="nome">Nome:</label>
             <input type="text" name="nome" value="<?php echo $row['nome']; ?>" required>
             <br><br>
