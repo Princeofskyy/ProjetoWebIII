@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $senha = $_POST['senha'];
     
     $usuario->registrar($nome, $sexo, $fone, $email, $senha);
-    header('Location: crudusuario.php');
+    header('Location: login.php');
     exit();
 }
 ?>
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/registre.css"> <!-- Caminho ajustado -->
+    <link rel="stylesheet" href="./css/registre.css"> 
     <title>Adicionar Usuário</title>
 </head>
 <body>

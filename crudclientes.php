@@ -70,7 +70,7 @@ function saudacao()
             echo '<a href="portal.php">Home</a>'; 
         }
         ?>
-            <a href="registrar_cliente.php">Adicionar Cliente</a>
+            <a href="registrarcli.php">Adicionar Cliente</a>
             <a href="logout.php">Logout</a>
         </nav>
     </header>

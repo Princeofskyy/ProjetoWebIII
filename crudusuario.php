@@ -58,7 +58,7 @@ function saudacao()
         <h1>Bem-vindo ao Portal de Usuários</h1>
         <nav>
             <a href="admin.php">Home</a>
-            <a href="registrar.php">Adicionar Usuário</a>
+            <a href="registrarusu.php">Adicionar Usuário</a>
             <a href="logout.php">Logout</a>
         </nav>
     </header>
