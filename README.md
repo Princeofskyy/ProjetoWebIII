@@ -48,6 +48,14 @@ Abaixo também criamos um exemplo feito no Canvas e no próprio VSCode de como s
 - `config/`: Diretório para conexão com o banco de dados.
 - `header&footer/`: Diretório para armazenar as headers e footers do site.
 
+## Tecnologias Utilizadas
+
+- **PHP:** Linguagem de programação utilizada para o back-end.
+- **MySQL:** Banco de dados utilizado para armazenar informações.
+- **HTML/CSS:** Estrutura e estilo da interface do usuário/clientes/produtos.
+- **Bootstrap:** Framework web utilizado para desenvolvimento de componentes de interface e front-end.
+
+
 ## Como Usar
 
 1. Clone o repositório:
