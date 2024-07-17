@@ -8,6 +8,13 @@ if (!isset($_SESSION['usuario_id'])) {
 
 include_once './config/config.php';
 include_once './classes/Produtos.php'; 
+include_once './classes/Usuario.php'; 
+
+// Obter dados do usuário logado
+$usuario = new Usuario($db); // Instância do objeto Usuario
+$dados_usuario = $usuario->lerPorId($_SESSION['usuario_id']);
+$nome_usuario = $dados_usuario['nome'];
+
 
 $produto = new Produto($db);
 $stmt = $produto->ler();
@@ -25,7 +32,14 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <header class="header">
         <h1>Bem-vindo ao Portal de Produtos</h1>
         <nav>
-            <a href="portal.php">Home</a>
+        <?php
+        // Verifica se o usuário é administrador
+        if ($dados_usuario['admin']) {
+            echo '<a href="admin.php">Home</a>'; 
+        } else {
+            echo '<a href="portal.php">Home</a>'; 
+        }
+        ?>
             <a href="adicionar_produtos.php">Adicionar Produto</a>
             <a href="logout.php">Logout</a>
         </nav>

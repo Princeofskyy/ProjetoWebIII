@@ -3,7 +3,6 @@
 session_start();
 include_once './config/config.php';
 include_once './classes/Usuario.php';
-
 $usuario = new Usuario($db);
 
 // Verificar se o usuário está logado
@@ -15,11 +14,9 @@ if (!isset($_SESSION['usuario_id'])) {
 // Obter dados do usuário logado
 $dados_usuario = $usuario->lerPorId($_SESSION['usuario_id']);
 $nome_usuario = $dados_usuario['nome'];
-$admin = $dados_usuario['admin']; 
 
 // Função para determinar a saudação
-function saudacao()
-{
+function saudacao() {
     $hora = date('H');
     if ($hora >= 6 && $hora < 12) {
         return "Bom dia";
@@ -29,23 +26,19 @@ function saudacao()
         return "Boa noite";
     }
 }
-if ($admin) {
-    header('Location: adm.php');
-    exit();
-}
 
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa Usuários</title>
-    <link rel="stylesheet" href="./css/portal.css">
+    <link rel="stylesheet" href="./css/inicial.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-
 <body>
     <header>
         <h1><?php echo saudacao() . ", " . $nome_usuario; ?>!</h1>
@@ -56,17 +49,17 @@ if ($admin) {
     <main>
         <div class="porta-container">
             <div class="porta">
-                <a class="button add-button" href="crudusuarios.php">Gerenciar Usuários</a>
+            <a class="button add-button" href="crudusuario.php">Gerenciar Usuários</a>
                 <a class="button add-button" href="crudclientes.php">Gerenciar Clientes</a>
-                <a class="button add-button" href="crudprodutos.php">Adicionar Produtos</a>
+                <a class="button add-button" href="crudprodutos.php">Gerenciar Produtos</a>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Hambiurgueria QI Delicia. Todos os direitos reservados.</p>
+    <p>&copy; <?php echo date('Y'); ?> Hamburgueria QI Delicia. Todos os direitos reservados.</p></p>
     </footer>
 
 </body>
-
 </html>
+

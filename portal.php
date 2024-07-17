@@ -49,7 +49,6 @@ function saudacao() {
     <main>
         <div class="porta-container">
             <div class="porta">
-            <a class="button add-button" href="crudusuario.php">Gerenciar Usuários</a>
                 <a class="button add-button" href="crudclientes.php">Gerenciar Clientes</a>
                 <a class="button add-button" href="crudprodutos.php">Gerenciar Produtos</a>
             </div>

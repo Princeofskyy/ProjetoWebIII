@@ -59,10 +59,17 @@ function saudacao()
 </head>
 
 <body>
-    <header class="header">
-        <h1>Bem-vindo ao Portal de Clientes</h1>
-        <nav>
-            <a href="portal.php">Home</a>
+<header class="header">
+    <h1>Bem-vindo ao Portal de Clientes</h1>
+    <nav>
+    <?php
+        // Verifica se o usuário é administrador
+        if ($dados_usuario['admin']) {
+            echo '<a href="admin.php">Home</a>'; 
+        } else {
+            echo '<a href="portal.php">Home</a>'; 
+        }
+        ?>
             <a href="registrar_cliente.php">Adicionar Cliente</a>
             <a href="logout.php">Logout</a>
         </nav>
